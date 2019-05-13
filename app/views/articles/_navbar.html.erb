@@ -1,0 +1,23 @@
+<nav class="navbar navbar-default" style="background:#E5E5E5;">
+    <div class="container-fluid mb-5">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="<%= root_path %>">Wiki</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="navbar-links">
+        <ul class="nav navbar-nav navbar-right">
+          <% if user_signed_in? %>
+          <div class="links-sign-in d-flex pr-5">
+            <li><%= link_to 'New Article', new_article_path, class: 'navbar-link pr-4' %></li>
+            <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
+          </div>
+          <% else %>
+            <li><%= link_to "Sign Up", new_user_registration_path %></li>
+            <li><%= link_to "Sign In", new_user_session_path %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div><!-- /.container-fluid -->
+  </nav>
