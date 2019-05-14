@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Wiki app, the goal is very simple: share some articles.
 
-Things you may want to cover:
+To create one, you need to sign in or sign up with an email and password.
 
-* Ruby version
+Then you can:
 
-* System dependencies
+* Create an article (name, description, image url and category).
 
-* Configuration
+* Edit this one.
 
-* Database creation
+To try the app:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`git clone` <br>
+`bundle install` <br>
+`rails s` || `rails server` <br>
